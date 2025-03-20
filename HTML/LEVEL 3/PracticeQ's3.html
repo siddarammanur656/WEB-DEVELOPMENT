@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registartion Form</h1>
+    <form action="server">
+        <label for="First_name">Name:</label>
+        <input type="text" id="Last_name" name="First_name" placeholder="Enter First name">
+        <input type="text" id="Last_name" name="Last_name" placeholder="Enter Last name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+        <br>
+        <label for="profession"> Please Select Your Profession:</label>
+        <select name="profession" id="profession">
+            <option value="">Select Profession</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="Gender">Please Select Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <label for="checkbox">Do you agree to all Terms and conditions?</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        Yes, I Agree
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <label for="feedback">Please provide feedback :</label>
+        <textarea id="feedback" name="feedback" rows="1" cols="50">Enter your feedback...</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+ 
+</body>
+</html>

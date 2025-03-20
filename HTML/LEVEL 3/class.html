@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LEVEL 3</title>
+</head>
+<body>
+    <h1>Table Example</h1>
+    <table border="black">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>New York</td>
+            <td>USA</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Semantic in html</h1>
+    <table border="black">
+        <thead>
+           <th>Product</th> 
+           <th>Price</th>
+           <th>Quantity</th>
+        </thead>
+        <tbody>
+            <td>Shirt</td>
+            <td>$19.99</td>
+            <td>5</td>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Total</td>
+            <td>5</td>
+        </tfoot>
+    </table>
+    <hr>
+    <h1>Colspan and Rowspan attributes</h1>
+    <table border="1">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="2">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+            <td>North Block</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+            <td>South Block</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Form in html </h1>
+    <form action="server">
+        <label for="username">Student:</label>
+        <input type="text" name="username" placeholder="Enter name..">
+        <br><br>
+        Roll Number:
+        <input type="number" name="roll_no" placeholder="Enter roll number..">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email..">
+        <br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="3" cols="30"></textarea>
+        <br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">I agree to the terms and conditions</label>
+        <br><br>
+        <input type="range" min="0" max="100" value="50">
+        <br><br>
+    </form>
+</body>
+</html>
